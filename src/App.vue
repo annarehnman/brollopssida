@@ -1,8 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" class="box-border bg-gray-500 relative">
     <Navbar />
+    <div class="w-full bg-white">
+      <div class="md:w-3/4 md:mx-auto p-5">
+        <router-view/>
+      </div>
+    </div>
   </div>
-  <router-view/>
 </template>
 
 <script>
