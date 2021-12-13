@@ -1,6 +1,6 @@
 <template>
   <!-- MOBILE -->
-  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-black bg-opacity-30' : hasScrolled }" class="navbar md:hidden flex justify-between fixed top-0 z-10 w-full p-5 text-white">
+  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-nearblack bg-opacity-40' : hasScrolled }" class="navbar md:hidden flex justify-between fixed top-0 z-10 w-full p-5 text-white">
     <div class="text-2xl text-bold">
       <router-link to="/">Anna & Rikard</router-link>
     </div>
@@ -14,7 +14,7 @@
         </button>
       </div>
       <!-- menu list - open: "block", closed: "hidden" -->
-      <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col items-end mt-4 space-y-3">
+      <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col items-end mt-4 space-y-4">
         <router-link to="/info" @click="toggleNav" class="px-1">Info</router-link>
         <router-link to="/kontakt" @click="toggleNav" class="px-1">Kontakt</router-link>
         <button class="border-2 border-white px-4 py-2 text-sm">
@@ -25,7 +25,7 @@
   </nav>
 
   <!-- LARGE SCREENS -->
-  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-black bg-opacity-30' : hasScrolled }" class="navbar hidden md:flex items-center fixed top-0 z-10 w-full px-5 py-8 text-white">
+  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-nearblack bg-opacity-40' : hasScrolled }" class="navbar hidden md:flex items-center fixed top-0 z-10 w-full px-5 py-8 text-white">
     <div class="w-3/4 mx-auto flex justify-between">
       <!-- brand start -->
       <div class="text-2xl text-bold">
@@ -37,7 +37,7 @@
         <ul class="flex flex-row items-center mt-0 space-x-8">
           <router-link to="/info" @click="toggleNav" class="px-1 border-b border-transparent hover:border-white active:border-white">Info</router-link>
           <router-link to="/kontakt" @click="toggleNav" class="px-1 border-b border-transparent hover:border-white active:border-white">Kontakt</router-link>
-          <button class="bg-transparent hover:bg-white hover:text-black border-2 border-white px-4 py-2 text-sm">
+          <button class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white px-4 py-2 text-sm">
             <router-link to="/kontakt" @click="toggleNav">OSA</router-link>
           </button>
         </ul>
