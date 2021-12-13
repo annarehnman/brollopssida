@@ -1,12 +1,9 @@
 <template>
   <!-- MOBILE -->
-  <nav :class="{ 'navbar-hidden bg-black' : !showNavbar }" class="navbar md:hidden flex justify-between fixed top-0 z-10 w-full p-5 text-white">
-    <!-- brand start -->
+  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-black bg-opacity-30' : hasScrolled }" class="navbar md:hidden flex justify-between fixed top-0 z-10 w-full p-5 text-white">
     <div class="text-2xl text-bold">
       <router-link to="/">Anna & Rikard</router-link>
     </div>
-    <!-- brand end -->
-    <!-- menu start -->
     <div class="flex flex-col justify-end">
       <!-- menu button start -->
       <div @click="toggleNav" class="flex justify-end mt-2">
@@ -16,9 +13,7 @@
           </svg>
         </button>
       </div>
-      <!-- menu button end -->
-
-      <!-- menu list start - open: "block", closed: "hidden" -->
+      <!-- menu list - open: "block", closed: "hidden" -->
       <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col items-end mt-4 space-y-3">
         <router-link to="/info" @click="toggleNav" class="px-1">Info</router-link>
         <router-link to="/kontakt" @click="toggleNav" class="px-1">Kontakt</router-link>
@@ -26,13 +21,11 @@
           <router-link to="/kontakt" @click="toggleNav">OSA</router-link>
         </button>
       </ul>
-      <!-- menu list end -->
     </div>
-    <!-- menu end -->
   </nav>
 
   <!-- LARGE SCREENS -->
-  <nav class="hidden md:flex items-center absolute top-0 w-full px-5 py-8 text-white">
+  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-black bg-opacity-30' : hasScrolled }" class="navbar hidden md:flex items-center fixed top-0 z-10 w-full px-5 py-8 text-white">
     <div class="w-3/4 mx-auto flex justify-between">
       <!-- brand start -->
       <div class="text-2xl text-bold">
@@ -54,11 +47,19 @@
   </nav>
 </template>
 
+
 <script>
 import { ref } from 'vue';
 
 export default {
   name: 'Navbar',
+  data () {
+    return {
+      showNavbar: true,
+      hasScrolled: false,
+      lastScrollPosition: 0
+    }
+  },
   methods: {
     onScroll () {
       const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
@@ -72,12 +73,7 @@ export default {
       }
       this.showNavbar = currentScrollPosition < this.lastScrollPosition
       this.lastScrollPosition = currentScrollPosition
-    }
-  },
-  data () {
-    return {
-      showNavbar: true,
-      lastScrollPosition: 0
+      this.hasScrolled = true
     }
   },
   setup() {
@@ -89,6 +85,7 @@ export default {
   },
   mounted () {
     window.addEventListener('scroll', this.onScroll)
+    this.hasScrolled = false
   },
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll)
