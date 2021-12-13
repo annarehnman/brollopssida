@@ -17,10 +17,10 @@
         </div>
         <!-- menu button end -->
         <!-- menu list start - open: "block", closed: "hidden" -->
-        <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col items-center mt-4 space-y-4 md:flex md:flex-row md:mt-0 md:space-y-0 md:space-x-8">
-          <router-link to="/info" @click="toggleNav" class="border-b border-transparent active:border-white">Info</router-link>
-          <router-link to="/kontakt" @click="toggleNav" class="border-b border-transparent active:border-white">Kontakt</router-link>
-          <button class="border-2 px-4 py-2 text-sm"><router-link to="/kontakt" @click="toggleNav">OSA</router-link></button>
+        <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col items-center mt-4 space-y-3 md:flex md:flex-row md:mt-0 md:space-y-0 md:space-x-8">
+          <router-link to="/info" @click="toggleNav" class="px-1 border-b border-transparent hover:border-white active:border-white">Info</router-link>
+          <router-link to="/kontakt" @click="toggleNav" class="px-1 border-b border-transparent hover:border-white active:border-white">Kontakt</router-link>
+          <button class="bg-transparent hover:bg-white hover:text-black border-2 border-white px-4 py-2 text-sm"><router-link to="/kontakt" @click="toggleNav">OSA</router-link></button>
         </ul>
         <!-- menu list end -->
       <!-- menu end -->

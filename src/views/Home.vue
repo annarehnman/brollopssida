@@ -4,7 +4,7 @@
       <div class="space-y-8">
         <h1 class="mb-3 text-5xl md:text-6xl">Anna & Rikard</h1>
         <p class="font-light text-2xl md:text-3xl">30 juli 2022 <span>&#183;</span> Kungsberg Gård, Strängnäs</p>
-        <button class="border-2 px-6 md:px-7 py-3 md:py-4 text-sm">OSA</button>
+        <button class="bg-transparent hover:bg-white hover:text-black border-2 border-white px-6 md:px-7 py-3 md:py-4 text-sm">OSA</button>
        </div>
     </div>
   </div>
