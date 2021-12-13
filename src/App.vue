@@ -1,10 +1,8 @@
 <template>
-  <div id="app" class="box-border bg-gray-500 relative">
+  <div id="app" class="relative">
     <Navbar />
-    <div class="w-full bg-white">
-      <div class="md:w-3/4 md:mx-auto p-5">
-        <router-view/>
-      </div>
+    <div class="h-screen">
+      <router-view/>
     </div>
   </div>
 </template>
