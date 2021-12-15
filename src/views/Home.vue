@@ -12,6 +12,6 @@ import HomeWelcome from '../components/home/HomeWelcome.vue'
 
 export default {
   components: { HomeWelcome, HomeInfo, HomeContact },
-  name: 'Home',
+  name: 'Home'
 }
 </script>

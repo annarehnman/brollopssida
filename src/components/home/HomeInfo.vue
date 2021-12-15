@@ -7,7 +7,7 @@
       <div class="lg:w-3/4 my-12 md:my-0">
         <div class="text-xl font-light leading-snug">
           <div class="space-y-6 lg:mb-6">
-          <p>Vi gifter oss lördagen 30 juli och hoppas verkligen att du vill vara med.</p>
+          <p>Vi gifter oss lördagen 30 juli och hoppas att du vill vara med.</p>
           <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
           </div>
           <home-schedule />
