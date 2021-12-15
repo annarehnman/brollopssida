@@ -10,12 +10,7 @@
         </div>
       </div>
   </section>
-  <section class="p-5 py-20 md:py-40 bg-beigetext-nearblack">
-    <div class="md:w-3/4 mx-auto text-2xl md:text-4xl font-semibold text-center">
-      <p class="leading-snug">Välkommen på bröllop lördagen 30 juli, vi hoppas att du vill vara med!</p>
-    </div>
-  </section>
-  <section class="bg-white px-5 pb-5 md:pb-20">
+  <section class="bg-white p-5 py-20 md:py-40">
     <div class="md:w-3/4 mx-auto md:flex md:space-x-20 text-center md:text-left">
       <div class="md:w-1/3">
         <img src="../images/home2.jpg"/> 
@@ -33,7 +28,7 @@
     <div >
       <div class="md:w-3/4 mx-auto md:pr-10">
         <h2 class="text-2xl md:text-4xl font-semibold text-center mb-4">Har du frågor?</h2>
-        <p class="md:text-lg font-light">Hör gärna av dig till via telefon eller mail, adresser och kontaktinfo hittar du här.</p>
+        <p class="md:text-lg font-light">Hör gärna av dig till via telefon eller mail, kontaktinfo till alla inblandade hittar du här.</p>
         <button class="bg-tranpsarent text-white hover:bg-white hover:text-nearblack border-2 border-white px-7 py-4 mt-10 text-sm">
             <router-link to="/kontakt">Kontakt</router-link>
           </button>
