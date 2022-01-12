@@ -50,19 +50,17 @@ export default {
   components: {
     NavbarBrand
   },
-  props: {
-    homeNavbar: {
-      type: Boolean,
-      default: null
-    },
-  },
   data () {
     return {
       showNavbar: true,
       showNavbarBg: false,
       showMenu: false,
       lastScrollPosition: 0,
-      transpNavbar: this.homeNavbar
+    }
+  },
+  computed: {
+    onHome() {
+      return this.$store.state.onHome;
     }
   },
   methods: {

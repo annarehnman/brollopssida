@@ -22,14 +22,13 @@ import ContactSection from '../components/sections/ContactSection.vue'
 export default {
   components: { InfoSection, ContactSection },
   name: 'Home',
-  data() {
-    return {
-      onHome: null
+  computed: {
+    onHome() {
+      return this.$store.state.onHome; 
     }
   },
   mounted () {
-    this.onHome = true
-    this.$emit("mounted", this.onHome);
+    this.$store.commit('changeNavbar', true)
   }
 }
 </script>

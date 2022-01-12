@@ -16,14 +16,13 @@
 
 export default {
   name: 'Contact',
-  data() {
-    return {
-      onHome: null
+  computed: {
+    onHome() {
+      return this.$store.state.onHome; 
     }
   },
   mounted () {
-    this.onHome = false
-    this.$emit("mounted", this.onHome);
-  }
+    this.$store.commit('changeNavbar', false)
+  },
 }
 </script>
