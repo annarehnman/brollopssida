@@ -1,6 +1,6 @@
 <template>
   <!-- MOBILE -->
-  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-nearblack bg-opacity-40' : showNavbarBg }" class="navbar md:hidden flex justify-between fixed top-0 z-10 w-full p-5 text-white">
+  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-nearblack bg-opacity-40' : showNavbarBg, 'fixed top-0 z-10' : onHome, 'bg-darkbeige' : !onHome }" class="navbar md:hidden flex justify-between w-full p-5 text-white">
     <navbar-brand />
     <div class="flex flex-col justify-end">
       <div @click="toggleMenu" class="flex justify-end mt-2">
@@ -25,7 +25,7 @@
   </nav>
   
   <!-- LARGE SCREENS -->
-  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-nearblack bg-opacity-40' : showNavbarBg }" class="navbar hidden md:flex items-center fixed top-0 z-10 w-full px-5 py-8 text-white">
+  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-nearblack bg-opacity-40' : showNavbarBg, 'fixed top-0 z-10' : onHome, 'bg-darkbeige' : !onHome }" class="navbar hidden md:flex items-center  w-full px-5 py-8 text-white">
     <div class="w-3/4 mx-auto flex justify-between">
       <navbar-brand />
       <!-- menu start -->
