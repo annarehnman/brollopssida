@@ -57,6 +57,15 @@
 
 <script>
 export default {
-  name: 'About'
+  name: 'About',
+  data() {
+    return {
+      onHome: null
+    }
+  },
+  mounted () {
+    this.onHome = false
+    this.$emit("mounted", this.onHome);
+  }
 }
 </script>

@@ -15,6 +15,6 @@
 
 <script>
 export default {
-  name: 'HomeContact',
+  name: 'ContactSection',
 }
 </script>

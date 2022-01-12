@@ -16,8 +16,14 @@
 
 export default {
   name: 'Contact',
-  components: {
-
+  data() {
+    return {
+      onHome: null
+    }
+  },
+  mounted () {
+    this.onHome = false
+    this.$emit("mounted", this.onHome);
   }
 }
 </script>

@@ -10,7 +10,12 @@
           <p>Vi gifter oss lördagen 30 juli och hoppas att du vill vara med.</p>
           <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
           </div>
-          <home-schedule />
+            <div class="hidden lg:block space-y-2">
+              <p><span class="font-semibold">00:00</span> Vigsel</p>
+              <p><span class="font-semibold">00:00</span> Mingel och tipspromenad</p>
+              <p><span class="font-semibold">00:00</span> Middag på magasinet</p>
+              <p><span class="font-semibold">00:00</span> Fest så länge vi vill och orkar</p>
+            </div>
           <button class="bg-darkbeige border border-darkbeige text-white hover:bg-nearblack hover:text-white px-7 py-4 mt-10 text-sm">
             <router-link to="/info">MER INFO</router-link>
           </button>
@@ -22,10 +27,8 @@
 
 
 <script>
-import HomeSchedule from './HomeSchedule.vue'
 
 export default {
-  components: { HomeSchedule },
-  name: 'HomeInfo',
+  name: 'InfoSection',
 }
 </script>

@@ -1,8 +1,9 @@
 <template>
   <div id="app" class="relative">
-    <Navbar />
+    <Navbar :homeNavbar="homeNavbar" />
     <div class="h-screen">
-      <router-view/>
+      <!-- <router-view @mounted="setNavbar" /> -->
+      <router-view />
     </div>
   </div>
 </template>
@@ -14,6 +15,16 @@
     name: 'App',
     components: {
       Navbar
+    },
+    data () {
+      return {
+        homeNavbar: null
+      }
+  },
+  methods: {
+    setNavbar(onHome) {
+      this.homeNavbar = onHome;
     }
+  },
   }
 </script>
