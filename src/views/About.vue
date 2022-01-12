@@ -23,10 +23,13 @@
       </div>
     </div>
   </section>
+  <contact-section />
 </template>
 
 <script>
+import ContactSection from '../components/sections/ContactSection.vue';
 export default {
+  components: { ContactSection },
   name: 'About',
   computed: {
     onHome() {
