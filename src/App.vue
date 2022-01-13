@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="relative">
-    <Navbar />
+    <navbar />
     <div class="h-screen">
       <router-view />
     </div>

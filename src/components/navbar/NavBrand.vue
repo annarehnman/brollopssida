@@ -7,6 +7,6 @@
 
 <script>
 export default {
-  name: 'NavbarBrand',
+  name: 'NavBrand',
 }
 </script>

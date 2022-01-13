@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-darkbeige text-white h-full p-5 py-10 md:py-20 lg:py-40 space-y-10">
+  <section class="bg-darkbeige text-white lg:h-full p-5 pb-20 pt-32 lg:pt-40 space-y-10">
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32 font-light leading-snug">
       <div class="lg:block lg:w-1/3 space-y-6 text-center lg:text-left">
         <h1 class="text-4.5xl">OSA</h1>
@@ -7,7 +7,7 @@
           <p>Vill och kan du vara med? Skicka ditt svar via formuläret, vi behöver veta <span class="font-bold">senast 30 april</span>.</p>
         </div>
       </div>
-      <div class="lg:w-3/4 my-12 md:my-0 text-lg text-left">
+      <div class="lg:w-3/4 mt-12 md:my-0 text-lg text-left">
         <form class="space-y-3">
           <div class="space-y-1">
             <label for="firstName">Förnamn</label><br>
@@ -61,7 +61,7 @@
           </div>
         </form>
         <div class="flex justify-center lg:justify-start">
-          <button class="w-full md:w-1/3 lg:w-min bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white px-7 py-4 mt-10 text-sm">
+          <button class="w-full md:w-1/3 lg:w-min bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white px-7 py-4 mt-16 text-sm">
             SKICKA
           </button>
         </div>
@@ -71,16 +71,18 @@
 </template>
 
 <script>
+import InfoSection from '../components/sections/InfoSection.vue';
+import ScheduleSection from '../components/sections/ScheduleSection.vue';
 export default {
-  components: { },
+  components: {InfoSection, ScheduleSection },
   name: 'OSA',
   computed: {
-    onHome() {
-      return this.$store.state.onHome; 
+    navLight() {
+      return this.$store.state.navLight; 
     }
   },
   mounted () {
-    this.$store.commit('changeNavbar', false)
+    this.$store.commit('toggleNavTheme', true)
   },
 }
 </script>

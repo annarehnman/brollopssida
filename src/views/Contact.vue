@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white p-5 py-10 md:py-20 lg:py-40 space-y-10">
+  <section class="bg-white p-5 pb-20 pt-32 lg:pt-40 space-y-10">
     <div class="md:w-3/4 mx-auto">
       <h1 class="text-4.5xl font-light text-center lg:text-left">Kontakt</h1>
     </div>
@@ -66,12 +66,12 @@ export default {
   components: { InfoSection },
   name: 'Contact',
   computed: {
-    onHome() {
-      return this.$store.state.onHome; 
+    navLight() {
+      return this.$store.state.navLight; 
     }
   },
   mounted () {
-    this.$store.commit('changeNavbar', false)
+    this.$store.commit('toggleNavTheme', false)
   },
 }
 </script>

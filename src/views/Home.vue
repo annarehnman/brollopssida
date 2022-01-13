@@ -5,7 +5,7 @@
         <h1 class="mb-3 text-5xl md:text-6xl">Anna & Rikard</h1>
         <p class="font-light text-2xl md:text-3xl">30 juli 2022 <span>&#183;</span> Kungsberg Gård, Strängnäs</p>
         <button class="bg-transparent border-2 border-white hover:bg-white hover:text-nearblack px-7 py-4">
-          <router-link to="/kontakt">OSA</router-link>
+          <router-link to="/osa">OSA</router-link>
         </button>
       </div>
     </div>
@@ -23,12 +23,12 @@ export default {
   components: { ScheduleSection, ContactSection },
   name: 'Home',
   computed: {
-    onHome() {
-      return this.$store.state.onHome; 
+    navLight() {
+      return this.$store.state.navLight; 
     }
   },
   mounted () {
-    this.$store.commit('changeNavbar', true)
+    this.$store.commit('toggleNavTheme', true)
   }
 }
 </script>
