@@ -22,10 +22,10 @@
           <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
           </div>
             <div class="hidden lg:block space-y-2">
-              <p><span class="font-semibold">00:00</span> Vigsel</p>
-              <p><span class="font-semibold">00:00</span> Mingel och tipspromenad</p>
-              <p><span class="font-semibold">00:00</span> Middag på magasinet</p>
-              <p><span class="font-semibold">00:00</span> Fest så länge vi vill och orkar</p>
+              <p><span class="font-semibold">15:00</span> Vigsel</p>
+              <p><span class="font-semibold">16:00</span> Mingel & Tipspromenad</p>
+              <p><span class="font-semibold">18:00</span> Middag på magasinet</p>
+              <p><span class="font-semibold">21:00</span> Fest så länge vi vill och orkar</p>
             </div>
           <button class="bg-nearblack border-2 border-nearblack text-white hover:bg-white hover:text-nearblack px-7 py-4 mt-10 text-sm">
             <router-link to="/info">MER INFO</router-link>
