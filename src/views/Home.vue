@@ -10,17 +10,17 @@
       </div>
     </div>
   </section>
-  <info-section />
+  <schedule-section />
   <contact-section />
 </template>
 
 
 <script>
-import InfoSection from "../components/sections/InfoSection.vue";
+import ScheduleSection from "../components/sections/ScheduleSection.vue";
 import ContactSection from '../components/sections/ContactSection.vue'
 
 export default {
-  components: { InfoSection, ContactSection },
+  components: { ScheduleSection, ContactSection },
   name: 'Home',
   computed: {
     onHome() {
