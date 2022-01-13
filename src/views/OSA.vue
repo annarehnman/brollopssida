@@ -72,9 +72,8 @@
 
 <script>
 import InfoSection from '../components/sections/InfoSection.vue';
-import ScheduleSection from '../components/sections/ScheduleSection.vue';
 export default {
-  components: {InfoSection, ScheduleSection },
+  components: {InfoSection },
   name: 'OSA',
   computed: {
     navLight() {
