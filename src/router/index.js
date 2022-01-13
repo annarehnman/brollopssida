@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
+import OSA from '../views/OSA.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/kontakt',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/osa',
+    name: 'OSA',
+    component: OSA
   }
 ]
 

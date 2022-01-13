@@ -16,7 +16,7 @@
               <p><span class="font-semibold">00:00</span> Middag på magasinet</p>
               <p><span class="font-semibold">00:00</span> Fest så länge vi vill och orkar</p>
             </div>
-          <button class="bg-darkbeige border border-darkbeige text-white hover:bg-nearblack hover:text-white px-7 py-4 mt-10 text-sm">
+          <button class="bg-nearblack border-2 border-nearblack text-white hover:bg-white hover:text-nearblack px-7 py-4 mt-10 text-sm">
             <router-link to="/info">MER INFO</router-link>
           </button>
         </div>

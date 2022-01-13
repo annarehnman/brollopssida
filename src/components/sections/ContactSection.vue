@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-nearblack p-5 py-20 text-white text-center">
+  <section class="bg-darkbeige p-5 py-20 text-white text-center">
     <div >
       <div class="md:w-3/4 mx-auto md:pr-10">
         <h2 class="text-2xl md:text-4xl font-semibold text-center mb-4">Har du frågor?</h2>

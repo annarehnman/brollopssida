@@ -25,7 +25,7 @@
   </nav>
   
   <!-- LARGE SCREENS -->
-  <nav :class="{ 'navbar-hidden' : !showNavbar && onHome, 'bg-nearblack bg-opacity-40' : showNavbarBg && onHome, 'fixed top-0 z-10' : onHome, 'bg-darkbeige' : !onHome }" class="navbar hidden md:flex items-center  w-full px-5 py-8 text-white">
+  <nav :class="{ 'navbar-hidden' : !showNavbar, 'bg-nearblack' : showNavbarBg, 'fixed top-0 z-10' : onHome }" class="fixed top-0 z-10 navbar hidden md:flex items-center  w-full px-5 py-8 text-white">
     <div class="w-3/4 mx-auto flex justify-between">
       <navbar-brand />
       <!-- menu start -->
@@ -33,7 +33,7 @@
         <router-link to="/info" class="px-1 border-b border-transparent hover:border-white active:border-white">Info</router-link>
         <router-link to="/kontakt" class="px-1 border-b border-transparent hover:border-white active:border-white">Kontakt</router-link>
         <button class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white px-4 py-2 text-sm">
-          <router-link to="/kontakt">OSA</router-link>
+          <router-link to="/osa">OSA</router-link>
         </button>
     </ul>
     <!-- menu end -->
