@@ -8,72 +8,20 @@
         </div>
       </div>
       <div class="lg:w-3/4 mt-12 md:my-0 text-lg text-left">
-        <form class="space-y-3">
-          <div class="space-y-1">
-            <label for="firstName">Förnamn</label><br>
-            <input type="text" id="firstName" name="firstName" required class="w-full p-1 pl-2 text-gray-500"><br>
-          </div>
-          <div class="space-y-1">
-            <label for="lastName">Efternamn</label><br>
-            <input type="text" id="lastName" name="lastName" required class="w-full p-1 pl-2 text-gray-500">
-          </div>
-          <div class="space-y-1">
-            <label for="phone">Telefonnummer</label><br>
-            <input type="tel" id="phone" name="phone" required class="w-full p-1 pl-2 text-gray-500">
-          </div>
-          <div class="space-y-1">
-            <label for="drink">Kommer du/ni närvara?</label><br>
-            <select id="drink" name="drink" required class="text-gray-500 p-1">
-              <option disabled selected value class="text-white"></option>
-              <option value="alkohol" class="w-full p-1 pl-2">Ja</option>
-              <option value="alkoholfritt" class="w-full p-1 pl-2">Nej</option>
-            </select>
-          </div>
-          <div class="space-y-1"><br>
-            <label for="drink">Dryck till middagen</label><br>
-            <select id="drink" name="drink" class="text-gray-500 p-1">
-              <option disabled selected value class="text-white"></option>
-              <option value="alkohol" class="w-full p-1 pl-2">Alkohol</option>
-              <option value="alkoholfritt" class="w-full p-1 pl-2">Alkoholfritt</option>
-            </select>
-          </div>
-          <div class="space-y-1">
-            <label for="allergies">Allergier eller specialkost</label><br>
-            <textarea name="allergies" rows="2" id="allergies" class="w-full p-1 pl-2 text-gray-500">
-            </textarea>
-          </div>
-          <div class="space-y-1">
-            <label for="allergies">Övrigt som är bra för oss att veta</label><br>
-            <textarea name="allergies" rows="2" id="allergies" class="w-full p-1 pl-2 text-gray-500">
-            </textarea>
-          </div>
-          <div class="space-y-1">
-            <div>
-              <p>Vi tittar på möjligheten att ordna buss till Strängnäs och/eller Eskilstuna på kvällen.</p>
-              <p>Är det intressant för dig?</p>
-            </div>
-            <select id="drink" name="drink" class="text-gray-500 p-1">
-              <option disabled selected value class="text-white"></option>
-              <option value="alkoholfritt" class="w-full p-1 pl-2 text-gray-500">Nej</option>
-              <option value="alkohol" class="w-full p-1 pl-2">Ja, till Strängnäs</option>
-              <option value="alkohol" class="w-full p-1 pl-2">Ja, till Eskilstuna</option>
-            </select>
-          </div>
-        </form>
-        <div class="flex justify-center lg:justify-start">
-          <button class="w-full md:w-1/3 lg:w-min bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white px-7 py-4 mt-16 text-sm">
-            SKICKA
-          </button>
-        </div>
+      <!-- <osa-form /> -->
+      <test-form />
       </div>
     </div>
   </section>
 </template>
 
+
 <script>
-import InfoSection from '../components/sections/InfoSection.vue';
+// import OsaForm from '../components/forms/OsaForm.vue';
+import TestForm from '../components/forms/TestForm.vue';
+
 export default {
-  components: {InfoSection },
+  components: { TestForm },
   name: 'OSA',
   computed: {
     navLight() {
@@ -82,6 +30,6 @@ export default {
   },
   mounted () {
     this.$store.commit('toggleNavTheme', true)
-  },
+  }
 }
 </script>
