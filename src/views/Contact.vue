@@ -22,7 +22,7 @@
       <div class="lg:w-3/4 md:my-0">
         <div class="text-xl  leading-snug">
           <p>Erik Andersson</p>
-          <p class="font-thin">Toastmaster och keeper of peace and order.</p>
+          <p class="font-thin">Toastmaster och keeper of peace.</p>
           <p class="font-thin">Vill du säga något fint, kul eller insiktsfullt under middagen är det hit du vänder dig.</p>
           <p class="mt-4"><a href="tel:+05890000111">0-589-0000111</a></p>
           <a href="mailto:email@example.com">email@example.com</a>             
@@ -49,7 +49,7 @@
       <div class="lg:w-3/4 md:my-0">
         <div class="text-xl  leading-snug">
           <p>Sebastian Opava</p>
-          <p class="font-thin">Bestman av rang och ring-bearer, vän till Rikard sen långt tillbaka.</p>
+          <p class="font-thin">Bestman av rang och betrodd ring-bearer, vän till Rikard sen långt tillbaka.</p>
           <p class="mt-4"><a href="tel:+05890000111">0-589-0000111</a></p>
           <a href="mailto:email@example.com">email@example.com</a> 
         </div>

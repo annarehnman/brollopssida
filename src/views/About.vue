@@ -7,8 +7,7 @@
       <div class="lg:w-3/4 my-12 md:my-0">
         <div class="text-xl font-light leading-snug">
           <div class="space-y-6 lg:mb-6">
-          <p>Vi gifter oss lördagen 30 juli och hoppas att du vill vara med.</p>
-          <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
@@ -20,8 +19,31 @@
       <div class="lg:w-3/4 my-12 md:my-0">
         <div class="text-xl font-light leading-snug">
           <div class="space-y-6 lg:mb-6">
-          <p>Vi gifter oss lördagen 30 juli och hoppas att du vill vara med.</p>
-          <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32 text-center lg:text-left">
+      <div class="lg:w-1/3 text-4.5xl font-light">
+        <p>Punkt</p>
+      </div>
+      <div class="lg:w-3/4 my-12 md:my-0">
+        <div class="text-xl font-light leading-snug">
+          <div class="space-y-6 lg:mb-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32 text-center lg:text-left">
+      <div class="lg:w-1/3 text-4.5xl font-light">
+        <p>Punkt</p>
+      </div>
+      <div class="lg:w-3/4 my-12 md:my-0">
+        <div class="text-xl font-light leading-snug">
+          <div class="space-y-6 lg:mb-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
@@ -33,8 +55,7 @@
       <div class="lg:w-3/4 mt-12 md:mt-0">
         <div class="text-xl font-light leading-snug">
           <div class="space-y-6 lg:mb-6">
-          <p>Vi gifter oss lördagen 30 juli och hoppas att du vill vara med.</p>
-          <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>

@@ -3,15 +3,15 @@
     <div class="space-y-2">
       <div>
         <label for="firstName">Förnamn</label>
-        <input v-model="firstName" type="text" name="firstName" class="w-full p-1 pl-2 mt-1 text-gray-500">
+        <input v-model="firstName" type="text" name="firstName" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500">
       </div>
       <div>
         <label for="lastName">Efternamn</label>
-        <input v-model="lastName" type="text" name="lastName" class="w-full p-1 pl-2 mt-1 text-gray-500">
+        <input v-model="lastName" type="text" name="lastName" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500">
       </div>
       <div>
         <label for="osa">Kommer du närvara?</label><br>
-        <select v-model="osa" name="osa" class="text-gray-500 p-1 mt-1">
+        <select v-model="osa" name="osa" :disabled="success" class="bg-white text-gray-500 p-1 mt-1">
           <option disabled selected value class="text-white"></option>
           <option value="Ja" class="w-full p-1 pl-2">Ja</option>
           <option value="Nej" class="w-full p-1 pl-2">Nej</option>
@@ -19,11 +19,11 @@
       </div>
       <div>
         <label for="phone">Telefonnummer</label>
-        <input v-model="phone" type="number" name="phone" class="w-full p-1 pl-2 mt-1 text-gray-500">
+        <input v-model="phone" type="number" name="phone" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500">
       </div>
       <div>
         <label for="drink">Dryck till middagen</label><br>
-        <select v-model="drink" name="drink" class="text-gray-500 p-1 mt-1">
+        <select v-model="drink" name="drink" :disabled="success" class="bg-white text-gray-500 p-1 mt-1">
           <option disabled selected value class="text-white"></option>
           <option value="Alkohol" class="w-full p-1 pl-2">Alkohol</option>
           <option value="Alkoholfritt" class="w-full p-1 pl-2">Alkoholfritt</option>
@@ -31,17 +31,17 @@
       </div>
       <div>
         <label for="allergies">Allergier eller specialkost</label>
-        <textarea v-model="allergies" name="allergies" class="w-full p-1 mt-1 text-gray-500"></textarea>
+        <textarea v-model="allergies" name="allergies" :disabled="success" class="w-full p-1 mt-1 text-gray-500"></textarea>
       </div>
       <div>
         <label for="misc">Övrigt som är bra för oss att veta</label><br>
-        <textarea v-model="misc" name="misc" class="w-full p-1 pl-2 mt-1 text-gray-500"></textarea>
+        <textarea v-model="misc" name="misc" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500"></textarea>
       </div>
       <div>
         <div>
           <p>Vi tittar på möjligheten att ordna buss till Strängnäs och/eller Eskilstuna på kvällen. Är det intressant för dig?</p>
         </div>
-        <select v-model="bus" name="bus" class="text-gray-500 p-1 mt-1">
+        <select v-model="bus" name="bus" :disabled="success" class="bg-white text-gray-500 p-1 mt-1">
           <option disabled selected value class="text-white"></option>
           <option value="Nej" class="w-full p-1 pl-2 text-gray-500">Nej</option>
           <option value="Ja, till Strängnäs" class="w-full p-1 pl-2">Ja, till Strängnäs</option>
@@ -90,6 +90,8 @@ export default {
       phone: null,
       osa: null,
       drink: null,
+      allergies: null,
+      misc: null,
       bus: null,
       checking: false,
       success: null
@@ -101,23 +103,25 @@ export default {
       if (this.firstName && this.lastName && this.osa) {
         if (this.osa === 'Nej') {
           this.sendEmail()
+          return
         }
         if (this.phone && this.drink) {
           if (this.osa === 'Ja') {
+            this.errors = [];
             this.sendEmail()
+            return
             } 
         }
         this.errors = [];
         if (!this.phone) {
         this.errors.push('- telefonnummer')
         this.checking = false
-        return
         }
         if (!this.drink) {
         this.errors.push('- dryck till middagen')
         this.checking = false
-        return
-        }         
+        }
+        return         
       }
       this.errors = [];
       if (!this.firstName) {
