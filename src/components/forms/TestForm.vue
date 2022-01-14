@@ -1,10 +1,5 @@
 <template>
-  <form
-    id="app"
-    @submit="checkForm"
-    method="post"
-    class="space-y-3"
-  >
+  <form @submit="checkForm" method="post" class="space-y-3">
 
     <p v-if="errors.length">
       <b>Please correct the following error(s):</b>
@@ -15,35 +10,17 @@
 
     <p>
       <label for="name">Name</label><br>
-      <input
-        id="name"
-        v-model="name"
-        type="text"
-        name="name"
-        class="w-2/3 text-gray-500"
-      >
+      <input id="name" v-model="name" type="text" name="name" class="w-2/3 text-gray-500">
     </p>
 
     <p>
       <label for="age">Age</label><br>
-      <input
-        id="age"
-        v-model="age"
-        type="number"
-        name="age"
-        min="0"
-        class="w-2/3 text-gray-500"
-      >
+      <input id="age" v-model="age" type="number" name="age" min="0" class="w-2/3 text-gray-500">
     </p>
 
     <p>
       <label for="movie">Favorite Movie</label><br>
-      <select
-        id="movie"
-        v-model="movie"
-        name="movie"
-        class="w-2/3 text-gray-500"
-      >
+      <select id="movie" v-model="movie" name="movie" class="w-2/3 text-gray-500">
         <option>Star Wars</option>
         <option>Vanilla Sky</option>
         <option>Atomic Blonde</option>
@@ -51,11 +28,7 @@
     </p>
 
     <p>
-      <input
-        type="submit"
-        value="SUBMIT"
-        class="bg-nearblack border-none px-4 py-2 text-sm"
-      >
+      <input type="submit" value="SUBMIT" class="bg-nearblack border-none px-4 py-2 text-sm">
     </p>
 
   </form>
@@ -76,12 +49,11 @@ export default {
     }
   },
   methods: {
-
     checkForm: function (e) {
       if (this.name && this.age) {
         return true;
+      
       }
-
       this.errors = [];
 
       if (!this.name) {

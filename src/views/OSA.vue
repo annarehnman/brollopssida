@@ -8,8 +8,7 @@
         </div>
       </div>
       <div class="lg:w-3/4 mt-12 md:my-0 text-lg text-left">
-      <!-- <osa-form /> -->
-      <test-form />
+      <osa-form />
       </div>
     </div>
   </section>
@@ -17,11 +16,10 @@
 
 
 <script>
-// import OsaForm from '../components/forms/OsaForm.vue';
-import TestForm from '../components/forms/TestForm.vue';
+import OsaForm from '../components/forms/OsaForm.vue';
 
 export default {
-  components: { TestForm },
+  components: { OsaForm },
   name: 'OSA',
   computed: {
     navLight() {
