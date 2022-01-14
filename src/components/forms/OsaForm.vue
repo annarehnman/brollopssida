@@ -23,7 +23,7 @@
       </div>
       <div>
         <label for="drink">Dryck till middagen</label><br>
-        <select name="drink" class="text-gray-500 p-1 mt-1">
+        <select v-model="drink" name="drink" class="text-gray-500 p-1 mt-1">
           <option disabled selected value class="text-white"></option>
           <option value="Alkohol" class="w-full p-1 pl-2">Alkohol</option>
           <option value="Alkoholfritt" class="w-full p-1 pl-2">Alkoholfritt</option>
@@ -31,17 +31,17 @@
       </div>
       <div>
         <label for="allergies">Allergier eller specialkost</label>
-        <textarea name="allergies" class="w-full p-1 mt-1 text-gray-500"></textarea>
+        <textarea v-model="allergies" name="allergies" class="w-full p-1 mt-1 text-gray-500"></textarea>
       </div>
       <div>
         <label for="misc">Övrigt som är bra för oss att veta</label><br>
-        <textarea name="misc" class="w-full p-1 pl-2 mt-1 text-gray-500"></textarea>
+        <textarea v-model="misc" name="misc" class="w-full p-1 pl-2 mt-1 text-gray-500"></textarea>
       </div>
       <div>
         <div>
           <p>Vi tittar på möjligheten att ordna buss till Strängnäs och/eller Eskilstuna på kvällen. Är det intressant för dig?</p>
         </div>
-        <select name="bus" class="text-gray-500 p-1 mt-1">
+        <select v-model="bus" name="bus" class="text-gray-500 p-1 mt-1">
           <option disabled selected value class="text-white"></option>
           <option value="Nej" class="w-full p-1 pl-2 text-gray-500">Nej</option>
           <option value="Ja, till Strängnäs" class="w-full p-1 pl-2">Ja, till Strängnäs</option>
@@ -51,27 +51,29 @@
     </div>
     <div v-if="!checking && !success" class="flex justify-center lg:justify-start">
       <input type="submit" value="SKICKA"
-      class="w-full md:w-1/3 lg:w-min px-7 py-4 mt-3 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
+      class="w-full md:w-1/3 lg:w-1/6 px-7 py-4 mt-5 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
    </div> 
+  </form>
 
-   <div v-if="success" class="justify-center lg:justify-start space-y-5">
-    <div class="text-2xl">
-      <b>Tack för ditt svar!</b>
-    </div>
-      <button @click="newForm()"
-      class="d-block w-block px-7 py-4 bg-transparant border-2 hover:bg-white border-white text-white hover:text-nearblack text-sm">ANMÄL EN TILL</button><br>
-   </div>
-
-    <div v-if="errors.length" class="text-center lg:text-left">
+  <div class="text-center lg:text-left mt-5">
+    <div v-if="errors.length">
       <b>Tack, men det saknas info!</b>
       <ul>
         <li v-for="(error, i) in errors" :key="i">{{ error }}</li>
       </ul>
     </div>
-    <div v-if="success === false" class="text-center lg:text-left">
-      <b>Något gick fel, försök igen lite senare eller hör av dig till vår support (Anna).</b>
+    <div v-if="success" class="space-y-5">
+      <div class="text-2xl mt-14">
+        <b>Tack för ditt svar!</b>
+      </div>
+      <button @click="newForm()"
+      class="w-full md:w-1/3 lg:w-1/5 px-7 py-4 bg-transparant border-2 hover:bg-white border-white text-white hover:text-nearblack text-sm">ANMÄL EN TILL</button><br>
     </div>
-  </form>
+    <div v-if="success === false">
+      <b>Något gick fel!</b>
+      <p>Försök igen eller hör av dig till vår support (Anna).</p>
+    </div>
+  </div>
 </template>
 
 
@@ -100,14 +102,24 @@ export default {
         if (this.osa === 'Nej') {
           this.sendEmail()
         }
-
-        if (this.osa === 'Ja' && this.drink && this.bus) {
-          console.log('ja-form ok')
-          return true; // send email
+        if (this.phone && this.drink) {
+          if (this.osa === 'Ja') {
+            this.sendEmail()
+            } 
         }
+        this.errors = [];
+        if (!this.phone) {
+        this.errors.push('- telefonnummer')
+        this.checking = false
+        return
+        }
+        if (!this.drink) {
+        this.errors.push('- dryck till middagen')
+        this.checking = false
+        return
+        }         
       }
       this.errors = [];
-
       if (!this.firstName) {
         this.errors.push('- förnamn')
         this.checking = false

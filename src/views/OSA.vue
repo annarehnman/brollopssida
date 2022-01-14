@@ -7,8 +7,8 @@
           <p>Vill och kan du vara med? Skicka ditt svar via formuläret, vi behöver veta <span class="font-bold">senast 30 april</span>.</p>
         </div>
       </div>
-      <div class="lg:w-3/4 mt-12 md:my-0 text-lg text-left">
-      <osa-form />
+      <div class="lg:w-3/4 mt-12 lg:my-0 text-lg text-left">
+        <osa-form />
       </div>
     </div>
   </section>
