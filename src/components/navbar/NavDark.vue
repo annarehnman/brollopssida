@@ -12,9 +12,9 @@
         <router-link to="/info" @click="toggleNavDropdown" class="px-1">Info</router-link>
         <router-link to="/kontakt" @click="toggleNavDropdown" class="px-1">Kontakt</router-link>
         <button 
-        class="border-2 px-4 py-2 text-sm"
+        class="border-2 py-2 text-sm"
         :class="{ 'border-nearblack' : showNavDropdown && !showNavBg, 'border-white' : showNavDropdown && showNavBg }">
-          <router-link to="/osa" @click="toggleNavDropdown">OSA</router-link>
+          <router-link to="/osa" @click="toggleNavDropdown" class="px-4 py-2">OSA</router-link>
         </button>
       </ul>
     </div>
@@ -37,9 +37,9 @@
         :class="{'hover:border-white' : showNavBg }">
         Kontakt</router-link>
         <button 
-        class="bg-transparent hover:bg-nearblack border-2 px-4 py-2 text-sm border-nearblack"
+        class="bg-transparent hover:bg-nearblack border-2 py-2 text-sm border-nearblack"
         :class="{'border-white hover:bg-white hover:text-nearblack' : showNavBg, 'hover:text-white' : !showNavBg }">
-          <router-link to="/osa">OSA</router-link>
+          <router-link to="/osa" class="px-4 py-2">OSA</router-link>
         </button>
       </ul>
     </div>

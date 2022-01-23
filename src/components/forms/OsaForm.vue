@@ -2,12 +2,8 @@
   <form ref="form" @submit.prevent="checkForm" class="space-y-9">
     <div class="space-y-2">
       <div>
-        <label for="firstName">Förnamn</label>
-        <input v-model="firstName" type="text" name="firstName" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500">
-      </div>
-      <div>
-        <label for="lastName">Efternamn</label>
-        <input v-model="lastName" type="text" name="lastName" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500">
+        <label for="name">Namn</label>
+        <input v-model="name" type="text" name="name" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500">
       </div>
       <div>
         <label for="osa">Kommer du närvara?</label><br>
@@ -51,7 +47,7 @@
     </div>
     <div v-if="!checking && !success" class="flex justify-center lg:justify-start">
       <input type="submit" value="SKICKA"
-      class="w-full md:w-1/3 lg:w-1/6 px-7 py-4 mt-5 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
+      class="w-full md:w-1/3 lg:w-1/6 px-7 py-4 mt-2 lg:mt-5 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
    </div> 
   </form>
 
@@ -85,8 +81,7 @@ export default {
   data() {
     return {
       errors: [],
-      firstName: null,
-      lastName: null,
+      name: null,
       phone: null,
       osa: null,
       drink: null,
@@ -100,7 +95,7 @@ export default {
   methods: {
     checkForm() {
       this.checking = true
-      if (this.firstName && this.lastName && this.osa) {
+      if (this.name && this.osa) {
         if (this.osa === 'Nej') {
           this.sendEmail()
           return
@@ -124,12 +119,8 @@ export default {
         return         
       }
       this.errors = [];
-      if (!this.firstName) {
-        this.errors.push('- förnamn')
-        this.checking = false
-      }
-      if (!this.lastName) {
-        this.errors.push('- efternamn')
+      if (!this.name) {
+        this.errors.push('- namn')
         this.checking = false
       }
       if (!this.osa) {
@@ -147,8 +138,7 @@ export default {
         });
     },
     resetForm() {
-      this.firstName = '',
-      this.lastName = '',
+      this.name = '',
       this.phone = '',
       this.osa = '',
       this.drink = '',

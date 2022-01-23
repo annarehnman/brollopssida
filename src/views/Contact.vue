@@ -6,52 +6,57 @@
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">
       <div class="lg:w-1/3">
         <div class="bg-gray-500 h-72 mb-3 lg:mb-6"></div>
+        <!-- <img src="~@/images/annaorikard.jpg" alt="" class="max-h-min mb-3 lg:mb-6"> -->
       </div>
       <div class="lg:w-3/4 md:my-0">
         <div class="text-xl  leading-snug">
           <p>Anna & Rikard</p>
-          <p class="font-thin">Det är vi som gifter oss, känner du inte igen oss vid det här laget är du nog på fel sida.</p> 
-          <p class="font-thin">Oss kontaktar man så lite som möjligt, vi lär ha fullt upp ändå :)</p> 
+          <p class="font-thin">Det är vi som gifter oss, känner du inte igen oss vid det här laget är du nog på fel sida.</p>
+          <p class="mt-4"><a href="tel:+731810867">073-181 08 67 (Anna)</a></p>
+          <p><a href="tel:+727229320">072-722 93 20 (Rikard)</a></p>
         </div>
       </div>
     </div>
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">
       <div class="lg:w-1/3">
         <div class="bg-gray-500 h-72 mb-3 lg:mb-6"></div>
+        <!-- <img src="~@/images/erik.jpeg" alt="" class="max-h-min mb-3 lg:mb-6"> -->
       </div>
       <div class="lg:w-3/4 md:my-0">
         <div class="text-xl  leading-snug">
           <p>Erik Andersson</p>
           <p class="font-thin">Toastmaster och keeper of peace.</p>
           <p class="font-thin">Vill du säga något fint, kul eller insiktsfullt under middagen är det hit du vänder dig.</p>
-          <p class="mt-4"><a href="tel:+05890000111">0-589-0000111</a></p>
-          <a href="mailto:email@example.com">email@example.com</a>             
+          <p class="mt-4"><a href="tel:+737363678">073-736 36 78</a></p>
+          <a href="mailto:apotekareandersson@gmail.com">apotekareandersson@gmail.com</a>             
         </div>
       </div>
     </div>
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">
       <div class="lg:w-1/3">
         <div class="bg-gray-500 h-72 mb-3 lg:mb-6"></div>
+        <!-- <img src="~@/images/otilia.jpeg" alt="" class="max-h-min mb-3 lg:mb-6"> -->
       </div>
       <div class="lg:w-3/4 md:my-0">
         <div class="text-xl  leading-snug">
           <p>Otilia Bogen</p>
           <p class="font-thin">Brudtärna extra ordinaire, Annas svägerska och partner in crime.</p>
-          <p class="mt-4"><a href="tel:+05890000111">0-589-0000111</a></p>
-          <a href="mailto:email@example.com">email@example.com</a>           
+          <p class="mt-4"><a href="tel:+703595878">070-359 58 78</a></p>
+          <a href="mailto:otilia.bogen@gmail.com">otilia.bogen@gmail.com</a>           
         </div>
       </div>
     </div>
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">
       <div class="lg:w-1/3">
         <div class="bg-gray-500 h-72 mb-3 lg:mb-6"></div>
+        <!-- <img src="~@/images/sebbe.jpg" alt="" class="max-h-min mb-3 lg:mb-6"> -->
       </div>
       <div class="lg:w-3/4 md:my-0">
         <div class="text-xl  leading-snug">
           <p>Sebastian Opava</p>
           <p class="font-thin">Bestman av rang och betrodd ring-bearer, vän till Rikard sen långt tillbaka.</p>
-          <p class="mt-4"><a href="tel:+05890000111">0-589-0000111</a></p>
-          <a href="mailto:email@example.com">email@example.com</a> 
+          <p class="mt-4"><a href="tel:+735675659">073-567 56 59</a></p>
+          <a href="mailto:sebastian.opava@gmail.com">sebastian.opava@gmail.com</a> 
         </div>
       </div>
     </div>

@@ -12,8 +12,8 @@
         <router-link to="/info" @click="toggleNavDropdown" class="px-1">Info</router-link>
         <router-link to="/kontakt" @click="toggleNavDropdown" class="px-1">Kontakt</router-link>
         <button 
-        class="border-2 px-4 py-2 text-sm border-white">
-          <router-link to="/osa" @click="toggleNavDropdown">OSA</router-link>
+        class="border-2 py-2 text-sm border-white">
+          <router-link to="/osa" @click="toggleNavDropdown" class="px-4 py-2">OSA</router-link>
         </button>
       </ul>
     </div>
@@ -33,8 +33,8 @@
         class="px-1 border-b border-transparent hover:border-white">
         Kontakt</router-link>
         <button 
-        class="bg-transparent hover:bg-white border-2 px-4 py-2 text-sm border-white hover:text-nearblack">
-          <router-link to="/osa">OSA</router-link>
+        class="bg-transparent hover:bg-white border-2 py-2 text-sm border-white hover:text-nearblack">
+          <router-link to="/osa" class="px-4 py-2">OSA</router-link>
         </button>
       </ul>
     </div>
