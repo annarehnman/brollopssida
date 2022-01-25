@@ -8,22 +8,23 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
     path: '/info',
     name: 'About',
-    component: About
+    component: About,
   },
   {
     path: '/kontakt',
     name: 'Contact',
-    component: Contact
+    component: Contact,
   },
   {
     path: '/osa',
     name: 'OSA',
-    component: OSA
+    component: OSA,
+    props: true
   }
 ]
 

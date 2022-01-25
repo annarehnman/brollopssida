@@ -11,9 +11,9 @@
       <div class="lg:w-3/4 md:my-0">
         <div class="text-xl  leading-snug">
           <p>Anna & Rikard</p>
-          <p class="font-thin">Det är vi som gifter oss, känner du inte igen oss vid det här laget är du nog på fel sida.</p>
-          <p class="mt-4"><a href="tel:+46731810867">073-181 08 67 (Anna)</a></p>
-          <p><a href="tel:+46727229320">072-722 93 20 (Rikard)</a></p>
+          <p class="font-thin">Det är vi som gifter oss, känner du inte igen oss är du nog på fel sida :)</p>
+          <p class="mt-4"><a href="tel:+46731810867">073-181 08 67<span class="font-thin"> (Anna)</span></a></p>
+          <p><a href="tel:+46727229320">072-722 93 20<span class="font-thin"> (Rikard)</span></a></p>
         </div>
       </div>
     </div>

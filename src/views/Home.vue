@@ -4,9 +4,7 @@
       <div class="space-y-6 md:space-y-8">
         <h1 class="mb-3 text-5xl md:text-6xl">Anna & Rikard</h1>
         <p class="font-light text-2xl md:text-3xl">30 juli 2022 <span>&#183;</span> Kungsberg Gård, Strängnäs</p>
-        <button class="bg-transparent border-2 border-white hover:bg-white hover:text-nearblack px-7 py-4">
-          <router-link to="/osa">OSA</router-link>
-        </button>
+        <button-white-outline buttonPath='/osa' text='OSA' />
       </div>
     </div>
   </section>
@@ -21,15 +19,13 @@
           <p>Vi gifter oss lördagen 30 juli och hoppas att du vill vara med.</p>
           <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
           </div>
-            <div class="hidden lg:block space-y-2">
-              <p><span class="font-semibold">15:00</span> Välkommen till Kungsberg</p>
-              <p><span class="font-semibold">16:00</span> Vigsel och mingel</p>
-              <p><span class="font-semibold">18:00</span> Middag på magasinet</p>
-              <p><span class="font-semibold">21:00</span> Fest så länge vi vill och orkar</p>
-            </div>
-          <button class="bg-nearblack border-2 border-nearblack text-white hover:bg-white hover:text-nearblack px-7 py-4 mt-10 text-sm">
-            <router-link to="/info">MER INFO</router-link>
-          </button>
+          <div class="hidden lg:block space-y-3">
+            <p><span class="font-semibold">15:00</span> Välkommen till Kungsberg</p>
+            <p><span class="font-semibold">16:00</span> Vigsel och mingel</p>
+            <p><span class="font-semibold">18:00</span> Middag på magasinet</p>
+            <p><span class="font-semibold">21:00</span> Fest så länge vi vill och orkar</p>
+          </div>
+          <button-black buttonPath='/info' text='MER INFO' class="mt-10 text-sm" />
         </div>
       </div>
     </div>
@@ -39,10 +35,12 @@
 
 
 <script>
+import ButtonWhiteOutline from '../components/buttons/ButtonWhiteOutline.vue';
+import ButtonBlack from '../components/buttons/ButtonBlack.vue';
 import ContactSection from '../components/sections/ContactSection.vue'
 
 export default {
-  components: { ContactSection },
+  components: { ButtonWhiteOutline, ButtonBlack, ContactSection },
   name: 'Home',
   computed: {
     navLight() {
