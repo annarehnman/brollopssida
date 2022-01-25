@@ -7,7 +7,7 @@
       <div class="lg:w-3/4 my-0">
         <div class="text-xl font-light leading-snug">
           <div class="space-y-6 lg:mb-6">
-            <p>Vi gifter oss på <a href="https://goo.gl/maps/QJ98i3BSzxGS2bEQ9" target="_blank" class="text-darkbeige underline font-normal">Kungsberg Gård</a>, utanför Strängnäs. Det kommer att vara skyltat för parkering när du kommer fram. Kör försiktigt, det finns lösa hundar, katter och bröllopsdeltagare på gården.</p>
+            <p>Vi gifter oss på <a href="https://goo.gl/maps/QJ98i3BSzxGS2bEQ9" class="text-darkbeige underline font-normal">Kungsberg Gård</a>, utanför Strängnäs. Det kommer att vara skyltat för parkering när du kommer fram. Kör försiktigt, det finns lösa hundar, katter och bröllopsdeltagare på gården.</p>
           </div>
         </div>
       </div>
@@ -83,9 +83,9 @@
         <div class="text-xl font-light leading-snug">
           <div class="space-y-6 lg:mb-6 leading-none">
             <p>För dig som reser en bit finns närmaste hotell & vandrarhem i Strängnäs. Det kommer också finnas möjlighet att tälta på Kungsberg, hör av dig om det är intressant.</p>
-            <p><a href="https://www.bishopsarms.com/vara-hotell/strangnas/" target="_blank" class="text-darkbeige underline font-normal">Hotell Bishop Arms</a></p>
-            <p><a href="http://www.hotellaurentius.se/" target="_blank" class="text-darkbeige underline font-normal">Hotell Larentius</a></p>
-            <p><a href="https://pensionat.traveleto.com/" target="_blank" class="text-darkbeige underline font-normal">Pensionat Gyllenhjelmsgatan</a></p>
+            <p><a href="https://www.bishopsarms.com/vara-hotell/strangnas/" class="text-darkbeige underline font-normal">Hotell Bishop Arms</a></p>
+            <p><a href="http://www.hotellaurentius.se/" class="text-darkbeige underline font-normal">Hotell Larentius</a></p>
+            <p><a href="https://pensionat.traveleto.com/" class="text-darkbeige underline font-normal">Pensionat Gyllenhjelmsgatan</a></p>
           </div>
         </div>
       </div>
