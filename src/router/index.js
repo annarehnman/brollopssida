@@ -9,16 +9,19 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    props: true
   },
   {
     path: '/info',
     name: 'About',
     component: About,
+    props: true
   },
   {
     path: '/kontakt',
     name: 'Contact',
     component: Contact,
+    props: true
   },
   {
     path: '/osa',

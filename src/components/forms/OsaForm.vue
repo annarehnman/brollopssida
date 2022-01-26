@@ -1,5 +1,5 @@
 <template>
-  <form ref="form" @submit.prevent="checkForm" class="space-y-9">
+  <form ref="form" @submit.prevent="checkForm" class="text-lg ">
     <div class="space-y-2">
       <div>
         <label for="name">Namn</label>
@@ -27,49 +27,48 @@
       </div>
       <div>
         <label for="allergies">Allergier eller specialkost</label>
-        <textarea v-model="allergies" name="allergies" :disabled="success" class="w-full p-1 mt-1 text-gray-500"></textarea>
+        <textarea v-model="allergies" name="allergies" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500"></textarea>
       </div>
       <div>
-        <label for="misc">Övrigt som är bra för oss att veta</label><br>
+        <label for="misc">Övrigt som är bra för oss att veta</label>
         <textarea v-model="misc" name="misc" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500"></textarea>
       </div>
       <div>
-        <div>
-          <p>Vi tittar på möjligheten att ordna buss till Strängnäs och/eller Eskilstuna på kvällen. Är det intressant för dig?</p>
-        </div>
+        <label for="bus">Vi tittar på möjligheten att ordna buss till Strängnäs och/eller Eskilstuna på kvällen. Är det intressant för dig?</label><br>
         <select v-model="bus" name="bus" :disabled="success" class="bg-white text-gray-500 p-1 mt-1">
           <option disabled selected value class="text-white"></option>
           <option value="Nej" class="w-full p-1 pl-2 text-gray-500">Nej</option>
           <option value="Ja, till Strängnäs" class="w-full p-1 pl-2">Ja, till Strängnäs</option>
           <option value="Ja, till Eskilstuna" class="w-full p-1 pl-2">Ja, till Eskilstuna</option>
         </select>
-      </div>      
+      </div>  
     </div>
-    <div v-if="!checking && !success" class="flex justify-center lg:justify-start">
+    <!-- BUTTON -->
+    <div v-if="!checking && !success" class="flex justify-center lg:justify-start mt-10 lg:mt-14">
       <input type="submit" value="SKICKA"
-      class="w-full md:w-1/3 lg:w-1/6 px-7 py-4 mt-2 lg:mt-5 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
-   </div> 
-  </form>
-
-  <div class="text-center lg:text-left mt-5">
-    <div v-if="errors.length">
-      <b>Tack, men det saknas info!</b>
-      <ul>
-        <li v-for="(error, i) in errors" :key="i">{{ error }}</li>
-      </ul>
-    </div>
-    <div v-if="success" class="space-y-5">
-      <div class="text-2xl mt-14">
-        <b>Tack för ditt svar!</b>
+      class="w-full md:w-1/3 lg:w-1/6 py-4 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
+    </div> 
+    <!-- ERROR MSG -->
+    <div class="text-center lg:text-left text-base mt-10 lg:mt-14">
+      <div v-if="errors.length">
+        <b>Tack, men det saknas info!</b>
+        <ul>
+          <li v-for="(error, i) in errors" :key="i">{{ error }}</li>
+        </ul>
       </div>
-      <button @click="newForm()"
-      class="w-full md:w-1/3 lg:w-1/5 px-7 py-4 bg-transparant border-2 hover:bg-white border-white text-white hover:text-nearblack text-sm">ANMÄL EN TILL</button><br>
+      <div v-if="success" class="space-y-5">
+        <b class="text-2xl">Tack för ditt svar!</b>
+        <div>
+          <button @click="newForm()"
+          class="w-full md:w-1/3 lg:w-1/6 py-4 bg-transparant border-2 hover:bg-white border-white text-white hover:text-nearblack text-sm">ANMÄL EN TILL</button><br>
+        </div>
+      </div>
+      <div v-if="success === false">
+        <b>Något gick fel!</b>
+        <p>Försök igen eller hör av dig till vår support (Anna).</p>
+      </div>
     </div>
-    <div v-if="success === false">
-      <b>Något gick fel!</b>
-      <p>Försök igen eller hör av dig till vår support (Anna).</p>
-    </div>
-  </div>
+  </form>
 </template>
 
 
@@ -130,12 +129,12 @@ export default {
     },
     sendEmail() {
       emailjs.sendForm('service_wfc4zgm', 'osa_form', this.$refs.form, 'user_0szKUYK5TFQa7kyiB2f7x')
-        .then(() => {
-            this.resetForm()
-            this.success = true
-        }, () => {
-            this.success = false
-        });
+      .then(() => {
+        this.resetForm()
+        this.success = true
+      }, () => {
+        this.success = false
+      });
     },
     resetForm() {
       this.name = '',

@@ -1,13 +1,11 @@
 <template>
-  <section class="bg-darkbeige text-white md:h-full p-5 pb-20 pt-32 lg:pt-40">
-    <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32 font-light leading-snug">
+  <section class="bg-darkbeige h-full overflow-auto text-white p-5 pb-20 pt-32 lg:pt-40 font-light">
+    <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">    
       <div class="lg:block lg:w-1/3 space-y-2 lg:space-y-6 text-center lg:text-left">
         <h1 class="text-4.5xl">OSA</h1>
-        <div class="text-xl lg:mb-6">
-          <p>Vill och kan du vara med? Skicka ditt svar via formuläret, vi behöver veta <span class="font-bold">senast 30 april</span>.</p>
-        </div>
+        <p class="text-xl">Vill och kan du vara med? Skicka ditt svar via formuläret, vi behöver veta <span class="font-semibold">senast 30 april</span>.</p>
       </div>
-      <div class="lg:w-3/4 mt-12 lg:my-0 text-lg text-left">
+      <div class="lg:w-3/4 mt-12 lg:mt-0">
         <osa-form />
       </div>
     </div>

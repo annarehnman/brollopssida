@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-home bg-cover w-full h-full flex justify-center items-center relative z-0">
+  <section class="bg-poppiesImage bg-cover w-full h-full flex justify-center items-center relative z-0">
     <div class="p-5 text-white text-center">
-      <div class="space-y-6 md:space-y-8">
-        <h1 class="mb-3 text-5xl md:text-6xl">Anna & Rikard</h1>
-        <p class="font-light text-2xl md:text-3xl">30 juli 2022 <span>&#183;</span> Kungsberg Gård, Strängnäs</p>
-        <button-white-outline buttonPath='/osa' text='OSA' />
+      <div>
+        <h1 class="mb-3 md:mb-5 text-5xl md:text-6xl">Anna & Rikard</h1>
+        <p class="mb-10 md:mb-14 font-light text-2xl md:text-3xl">30 juli 2022 <span>&#183;</span> Kungsberg Gård, Strängnäs</p>
+        <button-white-outline buttonLink='/osa' text='OSA' />
       </div>
     </div>
   </section>
@@ -14,7 +14,7 @@
         <p>Allt du behöver veta</p>
       </div>
       <div class="lg:w-3/4 my-12 md:my-0">
-        <div class="text-xl font-light leading-snug">
+        <div class="text-xl font-light">
           <div class="space-y-6 lg:mb-6">
           <p>Vi gifter oss lördagen 30 juli och hoppas att du vill vara med.</p>
           <p>Vigsel, middag och fest äger rum på Kungsberg Gård, 15 km utanför Strängnäs. All praktisk info om och inför dagen hittar på den här sidan.</p>
@@ -25,7 +25,7 @@
             <p><span class="font-semibold">18:00</span> Middag på magasinet</p>
             <p><span class="font-semibold">21:00</span> Fest så länge vi vill och orkar</p>
           </div>
-          <button-black buttonPath='/info' text='MER INFO' class="mt-10 text-sm" />
+          <button-black buttonLink='/info' text='MER INFO' class="mt-14 text-sm" />
         </div>
       </div>
     </div>
