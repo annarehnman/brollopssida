@@ -1,42 +1,31 @@
 <template>
-  <!-- MOBILE -->
-  <nav 
-  class="navbar fixed top-0 z-10 md:hidden flex justify-between align-middle w-full p-5 text-white"
-  :class="{ 'navbar-hidden' : !showNav, 'bg-nearblack' : showNavBg }">
-    <nav-brand />
-    <div
-    class="flex flex-col justify-end">
-      <nav-burger @click="toggleNavDropdown" class="flex justify-end mt-2" />
-      <ul v-if="showNav && showNavDropdown"
-      class="flex flex-col items-end mt-4 space-y-4">
-        <router-link to="/info" @click="toggleNavDropdown" class="px-1">Info</router-link>
-        <router-link to="/kontakt" @click="toggleNavDropdown" class="px-1">Kontakt</router-link>
-        <button 
-        class="border-2 py-2 text-sm border-white">
-          <router-link to="/osa" @click="toggleNavDropdown" class="px-4 py-2">OSA</router-link>
-        </button>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- LARGE SCREENS -->
   <nav
-  class="navbar fixed top-0 z-10 hidden md:flex items-center w-full px-5 py-8 text-white"
+  class="navbar fixed top-0 z-10 w-full p-5 md:py-8 text-white "
   :class="{ 'navbar-hidden' : !showNav, 'bg-nearblack' : showNavBg }">
-    <div class="w-3/4 mx-auto flex justify-between">
+    <div class="md:w-3/4 mx-auto flex justify-between items-start">
       <nav-brand />
-      <ul class="flex flex-row items-center mt-0 space-x-8">
-        <router-link to="/info"
-        class="px-1 border-b border-transparent hover:border-white">
-        Info</router-link>
-        <router-link to="/kontakt" 
-        class="px-1 border-b border-transparent hover:border-white">
-        Kontakt</router-link>
-        <button 
-        class="bg-transparent hover:bg-white border-2 py-2 text-sm border-white hover:text-nearblack">
+      <!-- small start -->
+      <div class="md:hidden flex flex-col items-end">
+        <nav-burger @click="toggleNavDropdown" />
+        <ul v-if="showNav && showNavDropdown"
+        class="flex flex-col items-end mt-4 space-y-4 px-1">
+          <router-link to="/info" @click="toggleNavDropdown">Info</router-link>
+          <router-link to="/kontakt" @click="toggleNavDropdown">Kontakt</router-link>
+          <a class="border-2 py-2 text-sm border-white">
+            <router-link to="/osa" @click="toggleNavDropdown" class="px-4 py-2">OSA</router-link>
+          </a>
+        </ul>
+      </div>
+      <!-- small end -->
+      <!-- large start -->
+      <ul class="hidden md:flex items-center space-x-8">
+        <router-link to="/info" class="px-1 border-b border-transparent hover:border-white">Info</router-link>
+        <router-link to="/kontakt" class="px-1 border-b border-transparent hover:border-white">Kontakt</router-link>
+        <a class="bg-transparent hover:bg-white border-2 py-2 text-sm border-white hover:text-nearblack">
           <router-link to="/osa" class="px-4 py-2">OSA</router-link>
-        </button>
+        </a>
       </ul>
+      <!-- large end -->
     </div>
   </nav>
 </template>

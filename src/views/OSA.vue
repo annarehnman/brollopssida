@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-darkbeige text-white min-h-full p-5 pb-10 lg:pb-20 pt-32 lg:pt-40 font-light">
+  <section class="bg-darkbeige text-white min-h-full p-5 pb-10 lg:pb-20 pt-36 lg:pt-40 font-light">
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">  
       <div class="lg:block lg:w-1/3 space-y-2 lg:space-y-6 text-center lg:text-left">
         <h1 class="text-4.5xl">OSA</h1>

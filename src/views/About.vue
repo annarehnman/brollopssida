@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white p-5 pb-20 pt-32 lg:pt-40 space-y-10 font-light">
+  <section class="bg-white p-5 pb-20 pt-36 lg:pt-40 space-y-10 font-light">
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
       <div class="lg:w-1/3 mb-4 text-4.5xl">
         <p>Plats</p>
