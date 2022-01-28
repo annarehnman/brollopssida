@@ -73,7 +73,7 @@ export default {
   name: 'Contact',
   computed: {
     navLight() {
-      return this.$store.state.navLight; 
+      return this.$store.state.navLight
     }
   },
   mounted () {

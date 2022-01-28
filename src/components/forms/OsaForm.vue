@@ -1,5 +1,5 @@
 <template>
-  <form ref="form" @submit.prevent="checkForm" class="text-lg ">
+  <form ref="form" @submit.prevent="checkForm" class="text-lg">
     <div class="space-y-2">
       <div>
         <label for="name">Namn</label>
@@ -8,7 +8,6 @@
       <div>
         <label for="osa">Kommer du närvara?</label><br>
         <select v-model="osa" name="osa" :disabled="success" class="bg-white text-gray-500 p-1 mt-1">
-          <option disabled selected value class="text-white"></option>
           <option value="Ja" class="w-full p-1 pl-2">Ja</option>
           <option value="Nej" class="w-full p-1 pl-2">Nej</option>
         </select>
@@ -20,7 +19,6 @@
       <div>
         <label for="drink">Dryck till middagen</label><br>
         <select v-model="drink" name="drink" :disabled="success" class="bg-white text-gray-500 p-1 mt-1">
-          <option disabled selected value class="text-white"></option>
           <option value="Alkohol" class="w-full p-1 pl-2">Alkohol</option>
           <option value="Alkoholfritt" class="w-full p-1 pl-2">Alkoholfritt</option>
         </select>
@@ -36,19 +34,18 @@
       <div>
         <label for="bus">Vi tittar på möjligheten att ordna buss till Strängnäs och/eller Eskilstuna på kvällen. Är det intressant för dig?</label><br>
         <select v-model="bus" name="bus" :disabled="success" class="bg-white text-gray-500 p-1 mt-1">
-          <option disabled selected value class="text-white"></option>
-          <option value="Nej" class="w-full p-1 pl-2 text-gray-500">Nej</option>
           <option value="Ja, till Strängnäs" class="w-full p-1 pl-2">Ja, till Strängnäs</option>
           <option value="Ja, till Eskilstuna" class="w-full p-1 pl-2">Ja, till Eskilstuna</option>
+          <option value="Nej" class="w-full p-1 pl-2 text-gray-500">Nej</option>
         </select>
       </div>  
     </div>
-    <!-- BUTTON -->
+    <!-- button -->
     <div v-if="!checking && !success" class="flex justify-center lg:justify-start mt-10 lg:mt-14">
       <input type="submit" value="SKICKA"
       class="w-full md:w-1/3 lg:w-1/6 py-4 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
     </div> 
-    <!-- ERROR MSG -->
+    <!-- error msg -->
     <div class="text-center lg:text-left text-base mt-10 lg:mt-14">
       <div v-if="errors.length">
         <b>Tack, men det saknas info!</b>

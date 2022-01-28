@@ -83,7 +83,7 @@ export default {
   name: 'About',
   computed: {
     navLight() {
-      return this.$store.state.navLight; 
+      return this.$store.state.navLight
     }
   },
   mounted () {

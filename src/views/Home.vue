@@ -44,7 +44,7 @@ export default {
   name: 'Home',
   computed: {
     navLight() {
-      return this.$store.state.navLight; 
+      return this.$store.state.navLight
     }
   },
   mounted () {

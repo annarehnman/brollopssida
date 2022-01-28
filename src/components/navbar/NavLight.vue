@@ -41,6 +41,7 @@
   </nav>
 </template>
 
+
 <script>
 import NavBrand from './NavBrand.vue';
 import NavBurger from './NavBurger.vue';
@@ -53,16 +54,16 @@ export default {
   },
   computed: {
     lastScrollPosition() {
-      return this.$store.state.lastScrollPosition; 
+      return this.$store.state.lastScrollPosition
     },
     showNav() {
-      return this.$store.state.showNav; 
+      return this.$store.state.showNav
     },
     showNavBg() {
-      return this.$store.state.showNavBg; 
+      return this.$store.state.showNavBg
     },
     showNavDropdown() {
-      return this.$store.state.showNavDropdown; 
+      return this.$store.state.showNavDropdown
     }
   },
   methods: {
