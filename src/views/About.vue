@@ -2,17 +2,10 @@
   <section class="bg-white p-5 pb-20 pt-36 lg:pt-40 space-y-10 font-light">
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
       <div class="lg:w-1/3 mb-4 text-4.5xl">
-        <p>Plats</p>
-      </div>
-      <div class="lg:w-3/4 text-xl lg:mb-4">
-        <p>Vi gifter oss på <a href="https://goo.gl/maps/QJ98i3BSzxGS2bEQ9" class="text-darkbeige font-normal underline">Kungsberg Gård</a>, utanför Strängnäs. Det kommer att vara skyltat för parkering när du kommer fram. Kör försiktigt, det finns lösa hundar, katter och bröllopsdeltagare på gården.</p>
-      </div>
-    </div>
-    <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
-        <p>Tider</p>
+        <p>Plats och tid</p>
       </div>
       <div class="lg:w-3/4 text-xl space-y-3 lg:space-y-4 lg:mb-4">
+        <p>Vi gifter oss på <a href="https://goo.gl/maps/QJ98i3BSzxGS2bEQ9" class="text-darkbeige font-normal underline">Kungsberg Gård</a>, utanför Strängnäs. Det kommer att vara skyltat för parkering när du kommer fram. Kör försiktigt, det finns lösa hundar, katter och bröllopsdeltagare på gården.</p>
         <p><span class="font-normal">15.00</span> Välkommen till Kungsberg</p>
         <p><span class="font-normal">16.00</span> Vigsel och mingel</p>
         <p><span class="font-normal">18.00</span> Middag på magasinet</p>
@@ -37,9 +30,10 @@
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
       <div class="lg:w-1/3 mb-4 text-4.5xl">
-        <p>Gåvor</p>
+        <p>Tal och gåvor</p>
       </div>
-      <div class="lg:w-3/4 text-xl lg:mb-4">
+      <div class="lg:w-3/4 text-xl space-y-3 lg:space-y-4 lg:mb-4">
+        <p>Vill du hålla tal eller styra upp något annat kul under middagen? Då vänder du dig till vår toastmaster, här hittar du <router-link :to="'/kontakt'" class="text-darkbeige font-normal underline">kontaktuppgifter</router-link>.</p>
         <p>Prylar har vi så det räcker - vill du ge oss något tar vi tacksamt emot bidrag till en bröllopsresa.</p>
       </div>
     </div>
@@ -67,7 +61,7 @@
         <p>Buss</p>
       </div>
       <div class="lg:w-3/4 text-xl lg:mb-4">
-        <p>Vi tittar på möjligheten att ordna buss från Kungsberg till Strängnäs och/eller Eskilstuna på kvällen, de kommer då att gå 21.30 och 01.00. Meddela oss via OSA-formuläret om det är intressant.</p>
+        <p>Vi tittar på möjligheten att ordna buss från Kungsberg till Strängnäs och/eller Eskilstuna på kvällen, en tidig och en sen. Meddela oss via OSA-formuläret om det är intressant.</p>
       </div>
     </div>
   </section>
