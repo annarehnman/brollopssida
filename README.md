@@ -3,6 +3,7 @@ En responsiv webbapp med informationssidor och OSA-formulär.
 
 Byggd med Vue + EmailJS.
 
+DEMO HÄR:
 https://poetic-travesseiro-63351b.netlify.app
 
 ---
