@@ -1,15 +1,11 @@
 # BRÖLLOPSSIDA
----
 En responsiv webbapp med informationssidor och OSA-formulär.
 
-Byggd med Vue + EmailJS
+Byggd med Vue + EmailJS.
 
+---
 
-
-
-# brollop
-
-## Project setup
+### Project setup
 ```
 npm install
 ```
