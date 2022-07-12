@@ -3,8 +3,6 @@ En responsiv webbapp med informationssidor och OSA-formulär.
 
 Byggd med Vue + EmailJS.
 
----
-
 ### Project setup
 ```
 npm install
