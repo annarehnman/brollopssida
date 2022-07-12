@@ -1,7 +1,7 @@
 # BRÖLLOPSSIDA
 En responsiv webbapp med informationssidor och OSA-formulär.
 
-Byggd med Vue + EmailJS.
+Byggd med Vue + Tailwind + EmailJS.
 
 DEMO HÄR:
 https://poetic-travesseiro-63351b.netlify.app
