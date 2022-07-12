@@ -125,7 +125,7 @@ export default {
       }
     },
     sendEmail() {
-      emailjs.sendForm('service_wfc4zgm', 'osa_form', this.$refs.form, 'user_0szKUYK5TFQa7kyiB2f7x')
+      emailjs.sendForm('service_wfc4zgm', 'osa_brollop', this.$refs.form, 'user_0szKUYK5TFQa7kyiB2f7x')
       .then(() => {
         this.resetForm()
         this.success = true

@@ -11,8 +11,8 @@
       <div class="lg:w-3/4 text-xl">
         <p class="font-normal">Anna & Rikard</p>
         <p>Det är vi som (äntligen) gifter oss. Känner du inte igen oss är du nog på fel sida :)</p>
-        <p class="mt-4"><a href="tel:+46731810867" class="text-darkbeige font-normal underline">073-181 08 67</a> Anna</p>
-        <p><a href="tel:+46727229320" class="text-darkbeige font-normal underline">072-722 93 20</a> Rikard</p>
+        <p class="mt-4"><a href="tel:+46000000000" class="text-darkbeige font-normal underline">070-000 00 00</a> Anna</p>
+        <p><a href="tel:+46000000000" class="text-darkbeige font-normal underline">070-000 00 00</a> Rikard</p>
       </div>
     </div>
 
@@ -24,8 +24,8 @@
         <p class="font-normal">Erik Andersson</p>
         <p>Toastmaster och keeper of peace.</p>
         <p>Vill du säga något fint, kul eller insiktsfullt under middagen är det hit du vänder dig.</p>
-        <p class="mt-4"><a href="tel:+46737363678" class="text-darkbeige font-normal underline">073-736 36 78</a></p>
-        <a href="mailto:apotekareandersson@gmail.com" class="text-darkbeige font-normal underline">apotekareandersson@gmail.com</a>             
+        <p class="mt-4"><a href="tel:+46000000000" class="text-darkbeige font-normal underline">070-000 00 00</a></p>
+        <a href="mailto:namnefternamn@mail.com" class="text-darkbeige font-normal underline">namnefternamn@mail.com</a>             
       </div>
 
     </div>
@@ -36,8 +36,8 @@
       <div class="lg:w-3/4 text-xl">
         <p class="font-normal">Otilia Bogen</p>
         <p>Brudtärna extra ordinaire, Annas svägerska och partner in crime. Har alltid det senaste scoopet.</p>
-        <p class="mt-4"><a href="tel:+46703595878" class="text-darkbeige font-normal underline">070-359 58 78</a></p>
-        <a href="mailto:otilia.bogen@gmail.com" class="text-darkbeige font-normal underline">otilia.bogen@gmail.com</a>           
+        <p class="mt-4"><a href="tel:+46000000000" class="text-darkbeige font-normal underline">070-000 00 00</a></p>
+        <a href="mailto:namnefternamn@mail.com" class="text-darkbeige font-normal underline">namnefternamn@mail.com</a>           
       </div>
     </div>
     
@@ -48,8 +48,8 @@
       <div class="lg:w-3/4 text-xl">
         <p class="font-normal">Sebastian Opava</p>
         <p>Bestman av rang och betrodd ring-bearer. Virrar du bort dig bland fält och hagar, ring Sebbe.</p>
-        <p class="mt-4"><a href="tel:+46735675659" class="text-darkbeige font-normal underline">073-567 56 59</a></p>
-        <a href="mailto:sebastian.opava@gmail.com" class="text-darkbeige font-normal underline">sebastian.opava@gmail.com</a> 
+        <p class="mt-4"><a href="tel:+46000000000" class="text-darkbeige font-normal underline">070-000 00 00</a></p>
+        <a href="mailto:namnefternamn@mail.com" class="text-darkbeige font-normal underline">namnefternamn@mail.com</a> 
       </div>
     </div>
 
