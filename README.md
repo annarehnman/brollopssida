@@ -1,6 +1,9 @@
-Bröllopssida
-------------
-En responsiv webbapplikation med informationssidor och OSA-formulär.
+#BRÖLLOPSSIDA
+---
+En responsiv webbapp med informationssidor och OSA-formulär.
+
+Byggd med Vue + EmailJS
+
 
 
 
