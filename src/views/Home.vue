@@ -1,7 +1,7 @@
 <template>
   <section class="bg-poppiesImage bg-cover w-full h-full flex justify-center items-center relative z-0">
     <div class="p-5 text-white text-center">
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-duration="1800">
         <h1 class="mb-3 md:mb-5 text-5xl md:text-6xl">Amanda & Tim</h1>
         <p class="mb-10 md:mb-14 font-light text-2xl md:text-3xl">30 juli 2022 <span>&#183;</span> Kungsberg Gård, Strängnäs</p>
         <button-white-outline buttonLink='/osa' text='OSA' />

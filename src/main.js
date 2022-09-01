@@ -8,7 +8,6 @@ import store from './store'
 
 createApp(App).use(store).use(router)
 .use(AOS.init({
-  duration: 1500,
-  once: true,
+  duration: 1500
 })
 ).mount('#app')

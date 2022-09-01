@@ -18,7 +18,7 @@
 
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">
       <div class="lg:w-1/3">
-        <img src="~@/images/tstmaster.jpg" alt="" class="max-h-96 mb-3 lg:mb-6" data-aos="fade-right" data-aos-duration="1600" data-aos-delay="100">
+        <img src="~@/images/tstmaster.jpg" alt="" class="max-h-96 mb-3 lg:mb-6" data-aos="fade-right" data-aos-delay="100">
       </div>
       <div class="lg:w-3/4 text-xl">
         <p class="font-normal leading-3 pt-3 md:pt-0 pb-3">Emil Karlsson</p>
@@ -31,7 +31,7 @@
     </div>
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">
       <div class="lg:w-1/3">
-        <img src="~@/images/tarna.jpg" alt="" class="max-h-96 mb-3 lg:mb-6" data-aos="fade-right" data-aos-duration="1700" data-aos-delay="200">
+        <img src="~@/images/tarna.jpg" alt="" class="max-h-96 mb-3 lg:mb-6" data-aos="fade-right" data-aos-delay="200">
       </div>
       <div class="lg:w-3/4 text-xl">
         <p class="font-normal leading-3 pt-3 md:pt-0 pb-3">Olivia Björk</p>
@@ -43,7 +43,7 @@
     
     <div class="md:w-3/4 mx-auto lg:flex lg:space-x-32">
       <div class="lg:w-1/3">
-        <img src="~@/images/bestman.jpg" alt="" class="max-h-96 mb-3 lg:mb-6" data-aos="fade-right" data-aos-duration="1800" data-aos-delay="300">
+        <img src="~@/images/bestman.jpg" alt="" class="max-h-96 mb-3 lg:mb-6" data-aos="fade-right" data-aos-delay="300">
       </div>
       <div class="lg:w-3/4 text-xl">
         <p class="font-normal leading-3 pt-3 md:pt-0 pb-3">Alex Gustafsson</p>

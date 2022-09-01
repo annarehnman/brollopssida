@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white p-5 pb-20 pt-36 lg:pt-40 space-y-10 font-light">
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-once="true">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right">
         <p>Plats och tid</p>
       </div>
       <div class="lg:w-3/4 text-xl space-y-5 lg:space-y-6 lg:mb-6">
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1600" data-aos-delay="100" data-aos-once="true">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-delay="100">
         <p>Dresscode</p>
       </div>
       <div class="lg:w-3/4 text-xl lg:mb-4">
@@ -21,8 +21,8 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1700" data-aos-delay="200" data-aos-once="true">
-        <p>Tal och gåvor</p>
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-delay="200">
+        <p>Tal och gåvor</p> 
       </div>
       <div class="lg:w-3/4 text-xl space-y-3 lg:space-y-4 lg:mb-4">
         <p>Vill du hålla tal eller styra upp något annat kul under middagen? Då vänder du dig till vår toastmaster, här hittar du <router-link :to="'/kontakt'" class="text-darkbeige font-normal underline">kontaktuppgifter</router-link>.</p>
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1800" data-aos-delay="300" data-aos-once="true">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-delay="300">
         <p>Bar</p>
       </div>
       <div class="lg:w-3/4 text-xl lg:mb-4">
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1900" data-aos-delay="400" data-aos-once="true">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-delay="400">
         <p>Övernattning</p>
       </div>
       <div class="lg:w-3/4 text-xl space-y-3 lg:space-y-4 lg:mb-4">
