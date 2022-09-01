@@ -1,10 +1,10 @@
 <template>
   <section class="bg-white p-5 pb-20 pt-36 lg:pt-40 space-y-10 font-light">
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-once="true">
         <p>Plats och tid</p>
       </div>
-      <div class="lg:w-3/4 text-xl space-y-3 lg:space-y-4 lg:mb-4">
+      <div class="lg:w-3/4 text-xl space-y-5 lg:space-y-6 lg:mb-6">
         <p>Vi gifter oss på <a href="https://goo.gl/maps/QJ98i3BSzxGS2bEQ9" class="text-darkbeige font-normal underline">Kungsberg Gård</a>, utanför Strängnäs. Det kommer att vara skyltat för parkering när du kommer fram. Kör försiktigt, det finns lösa hundar, katter och bröllopsdeltagare på gården.</p>
         <p><span class="font-normal">15.00</span> Välkommen till Kungsberg</p>
         <p><span class="font-normal">16.00</span> Vigsel och mingel</p>
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1600" data-aos-delay="100" data-aos-once="true">
         <p>Dresscode</p>
       </div>
       <div class="lg:w-3/4 text-xl lg:mb-4">
@@ -21,15 +21,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
-        <p>Barnfritt</p>
-      </div>
-      <div class="lg:w-3/4 text-xl lg:mb-4">
-        <p>Vi önskar ett barnfritt bröllop.</p>
-      </div>
-    </div>
-    <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1700" data-aos-delay="200" data-aos-once="true">
         <p>Tal och gåvor</p>
       </div>
       <div class="lg:w-3/4 text-xl space-y-3 lg:space-y-4 lg:mb-4">
@@ -38,7 +30,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1800" data-aos-delay="300" data-aos-once="true">
         <p>Bar</p>
       </div>
       <div class="lg:w-3/4 text-xl lg:mb-4">
@@ -46,7 +38,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-duration="1900" data-aos-delay="400" data-aos-once="true">
         <p>Övernattning</p>
       </div>
       <div class="lg:w-3/4 text-xl space-y-3 lg:space-y-4 lg:mb-4">
@@ -57,7 +49,7 @@
       </div>
     </div>
     <div class="md:w-3/4 mx-auto text-center lg:flex lg:space-x-32 lg:text-left">
-      <div class="lg:w-1/3 mb-4 text-4.5xl">
+      <div class="lg:w-1/3 mb-4 text-4.5xl" data-aos="fade-right" data-aos-delay="600">
         <p>Buss</p>
       </div>
       <div class="lg:w-3/4 text-xl lg:mb-4">

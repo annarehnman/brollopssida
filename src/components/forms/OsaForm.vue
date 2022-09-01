@@ -1,6 +1,6 @@
 <template>
   <form ref="form" @submit.prevent="checkForm" class="text-lg">
-    <div class="space-y-2">
+    <div class="space-y-4">
       <div>
         <label for="name">Namn</label>
         <input v-model="name" type="text" name="name" :disabled="success" class="w-full p-1 pl-2 mt-1 text-gray-500">
@@ -42,14 +42,14 @@
     </div>
     <!-- button -->
     <div v-if="!checking && !success" class="flex justify-center lg:justify-start mt-10 lg:mt-14">
-      <input type="submit" value="SKICKA"
-      class="w-full md:w-1/3 lg:w-1/6 py-4 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
+      <input type="submit" value="SKICKA" 
+      class="transition duration-300 w-full md:w-1/3 lg:w-1/6 py-4 bg-nearblack border-2 border-nearblack text-white hover:bg-darkbeige hover:border-white hover:text-white text-sm">
     </div> 
     <!-- error msg -->
     <div class="text-center lg:text-left text-base mt-10 lg:mt-14">
       <div v-if="errors.length">
         <b>Tack, men det saknas info!</b>
-        <ul>
+        <ul class="list-none">
           <li v-for="(error, i) in errors" :key="i">{{ error }}</li>
         </ul>
       </div>
@@ -57,12 +57,12 @@
         <b class="text-2xl">Tack för ditt svar!</b>
         <div>
           <button @click="newForm()"
-          class="w-full md:w-1/3 lg:w-1/6 py-4 bg-transparant border-2 hover:bg-white border-white text-white hover:text-nearblack text-sm">ANMÄL EN TILL</button><br>
+          class="transition duration-300 w-full md:w-1/3 lg:w-1/6 py-4 bg-transparant border-2 hover:bg-white border-white text-white hover:text-nearblack text-sm">ANMÄL EN TILL</button><br>
         </div>
       </div>
       <div v-if="success === false">
         <b>Något gick fel!</b>
-        <p>Försök igen eller hör av dig till vår support (Anna).</p>
+        <p>Försök igen eller hör av dig till oss.</p>
       </div>
     </div>
   </form>

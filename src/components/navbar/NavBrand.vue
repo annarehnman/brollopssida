@@ -1,6 +1,6 @@
 <template>
   <div class="text-2xl text-bold">
-      <router-link to="/">Anna & Rikard</router-link>
+      <router-link to="/">Amanda & Tim</router-link>
   </div>
 </template>
 

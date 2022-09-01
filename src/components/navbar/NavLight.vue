@@ -19,10 +19,10 @@
       <!-- small end -->
       <!-- large start -->
       <ul class="hidden md:flex items-center space-x-8">
-        <router-link to="/info" class="px-1 border-b border-transparent hover:border-white">Info</router-link>
+        <router-link to="/info" class="transition duration-300 px-1 border-b border-transparent hover:border-white">Info</router-link>
         <router-link to="/kontakt" class="px-1 border-b border-transparent hover:border-white">Kontakt</router-link>
-        <a class="bg-transparent hover:bg-white border-2 py-2 text-sm border-white hover:text-nearblack">
-          <router-link to="/osa" class="px-4 py-2">OSA</router-link>
+        <a class="bg-transparent transition duration-300 hover:bg-white border-2 py-2 text-sm border-white hover:text-nearblack">
+          <router-link to="/osa" class="transition duration-300 px-4 py-2">OSA</router-link>
         </a>
       </ul>
       <!-- large end -->

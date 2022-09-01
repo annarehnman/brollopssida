@@ -6,4 +6,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import store from './store'
 
-createApp(App).use(store).use(router).use(AOS.init).mount('#app')
+createApp(App).use(store).use(router)
+.use(AOS.init({
+  duration: 1500,
+  once: true,
+})
+).mount('#app')

@@ -22,14 +22,14 @@
       <!-- large screen -->
       <ul class="hidden md:flex items-center space-x-8">
         <router-link to="/info"
-        class="px-1 border-b border-transparent hover:border-nearblack" 
+        class="transition duration-300 px-1 border-b border-transparent hover:border-nearblack" 
         :class="{'hover:border-white' : showNavBg }">
         Info</router-link>
         <router-link to="/kontakt" 
-        class="px-1 border-b border-transparent hover:border-nearblack"
+        class="transition duration-300 px-1 border-b border-transparent hover:border-nearblack"
         :class="{'hover:border-white' : showNavBg }">
         Kontakt</router-link>
-        <a class="bg-transparent hover:bg-nearblack border-2 py-2 text-sm border-nearblack"
+        <a class="bg-transparent transition duration-300 hover:bg-nearblack border-2 py-2 text-sm border-nearblack"
         :class="{'border-white hover:bg-white hover:text-nearblack' : showNavBg, 'hover:text-white' : !showNavBg }">
           <router-link to="/osa" class="px-4 py-2">OSA</router-link>
         </a>
